@@ -1,0 +1,52 @@
+.cover__link-box {
+  background-image: url(../../../images/__background.jpg);
+  max-width: 1184px;
+  min-height: 740px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  flex-direction: column;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  background-size: cover;
+}
+
+.cover__link-box::before {
+  content: "";
+  background-color: #000;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s;
+  z-index: -1;
+}
+
+.cover__link-box:hover:before {
+opacity: 0.8;
+}
+
+@media (max-width: 1279px) {
+  .cover__link-box {
+    max-width: 100%;
+    gap: 32px;
+    min-height: 640px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .cover__link-box {
+    min-height: 480px;
+  }
+}
+
+@media (max-width: 767px) {
+  .cover__link-box {
+    gap: 16px;
+    min-height: 200px;
+  }
+}

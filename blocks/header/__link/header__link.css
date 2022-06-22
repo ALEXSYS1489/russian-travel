@@ -1,0 +1,21 @@
+.header__link {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.17;
+  text-decoration-line: underline;
+  color: #FFFFFF;
+  margin-left: 18px;
+}
+
+.header__link:last-of-type {
+  text-decoration-line: none;
+}
+
+@media (max-width: 767px) {
+  .header__link {
+    font-size: 18px;
+    line-height: 1.11;
+  }
+}
