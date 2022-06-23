@@ -1,5 +1,6 @@
 .cover__link-box {
   background-image: url(../../../images/__background.jpg);
+  background-position: center;
   max-width: 1184px;
   min-height: 740px;
   display: flex;
@@ -15,7 +16,7 @@
 
 .cover__link-box::before {
   content: "";
-  background-color: #000;
+  background-color: #2A2C2F;
   opacity: 0.3;
   position: absolute;
   top: 0;
@@ -27,7 +28,7 @@
 }
 
 .cover__link-box:hover:before {
-opacity: 0.8;
+  opacity: 0.8;
 }
 
 @media (max-width: 1279px) {
